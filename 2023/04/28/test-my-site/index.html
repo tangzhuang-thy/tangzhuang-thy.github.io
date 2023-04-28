@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <!-- Html Head Tag-->
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="John Doe">
+  <!-- Open Graph Data -->
+  <meta property="og:title" content="test_my_site"/>
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="Hexo"/>
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="http://example.com"/>
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+
+  <!-- Site Title -->
+  <title>Hexo</title>
+
+  <!-- Bootstrap CSS -->
+  
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+
+  <!-- Custom CSS -->
+  
+  
+<link rel="stylesheet" href="/css/style.dark.css">
+
+
+  <!-- Google Analytics -->
+  
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+  <body>
+    <!-- Page Header -->
+
+
+<header class="site-header header-background" style="background-image: url(/img/default-banner-dark.jpg)">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="page-title with-background-image">
+          <p class="title">test_my_site</p>
+          <p class="subtitle"></p>
+        </div>
+        <div class="site-menu with-background-image">
+          <ul>
+            
+              <li>
+                <a href="/">
+                  
+                  Home
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="/archives">
+                  
+                  Archives
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="https://github.com/<your-github-username>">
+                  
+                  Github
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="mailto:<your-email-address>">
+                  
+                  Email
+                  
+                </a>
+              </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<article>
+  <div class="container typo">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="post-info text-muted">
+          
+            <!-- Author -->
+            <span class="author info">By John Doe</span>
+          
+          <!-- Date -->
+          <span class="date-time info">On
+            <span class="date">2023-04-28</span>
+            <span class="time">15:33:47</span>
+          </span>
+          
+        </div>
+        <!-- Tags -->
+        
+        <!-- Post Main Content -->
+        <div class="post-content">
+          <h1 id="Mac使用iTerm2-oh-My-Zsh配置个性化终端教程"><a href="#Mac使用iTerm2-oh-My-Zsh配置个性化终端教程" class="headerlink" title="Mac使用iTerm2 + oh My Zsh配置个性化终端教程"></a>Mac使用iTerm2 + oh My Zsh配置个性化终端教程</h1><h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>Mac自带的默认终端功能太过简单，iTerm2是一个MacOS下的终端模拟器，拥有更多的功能和用户体验。</p>
+<p>Z shell（Zsh）是在bash（macOS的默认shell）之上构建的Unix shell。 </p>
+<h2 id="步骤一：安装Homebrew"><a href="#步骤一：安装Homebrew" class="headerlink" title="步骤一：安装Homebrew"></a>步骤一：安装Homebrew</h2><p><a target="_blank" rel="noopener" href="https://brew.sh/">Homebrew</a>  是一个免费的开源软件包管理系统，可以简化MacOS伤的软件安装。</p>
+<p>安装Homebrew：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;</span><br></pre></td></tr></table></figure>
+
+<h2 id="步骤二：安装iTerm2"><a href="#步骤二：安装iTerm2" class="headerlink" title="步骤二：安装iTerm2"></a>步骤二：安装iTerm2</h2><p>iTerm2 是终端的替代品，也是 iTerm 的继任者。大多数软件工程师更喜欢 i<a target="_blank" rel="noopener" href="https://www.iterm2.com/">Term2</a> 而不是 macOS 附带的默认终端，因为它具有很酷的<a target="_blank" rel="noopener" href="https://www.iterm2.com/features.html">功能</a>。你可以将 zsh 集成到 iTerm2 中以提高生产力。</p>
+<p>安装iTerm2:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew cask install iterm2</span><br></pre></td></tr></table></figure>
+
+<h2 id="步骤三：安装oh-my-zsh"><a href="#步骤三：安装oh-my-zsh" class="headerlink" title="步骤三：安装oh my zsh"></a>步骤三：安装oh my zsh</h2><p>Mac系统自带了zsh，可以通过 <strong>zsh –version</strong> 来查看zsh的版本，将zsh设置为默认的Shell：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chsh -s /bin/zsh</span><br></pre></td></tr></table></figure>
+
+<p>安装oh my zsh：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sh -c &quot;$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&quot;</span><br></pre></td></tr></table></figure>
+
+<h2 id="步骤四：更改默认主题以及配置语法高亮、自动补齐"><a href="#步骤四：更改默认主题以及配置语法高亮、自动补齐" class="headerlink" title="步骤四：更改默认主题以及配置语法高亮、自动补齐"></a>步骤四：更改默认主题以及配置语法高亮、自动补齐</h2><p>Oh My Zsh 捆绑了很多主题。默认主题是 robbyrussell，但你可以将其更改为你选择的任何主题。在这个例子中，我将其更改为 agnoster，一个已经预装的主题。</p>
+<p>通过编辑**~.zshrc**文件来进行操作：</p>
+<p><img src="/2023/04/28/test-my-site/themes-agnoster.png" alt="themes-agnoster"></p>
+<p>安装字体：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/powerline/fonts.git</span><br><span class="line"></span><br><span class="line">cd fonts</span><br><span class="line"></span><br><span class="line">./install.sh</span><br></pre></td></tr></table></figure>
+
+<p>更改字体：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iTerm2 &gt; Preferences &gt; Profiles &gt; Text &gt; Change Font</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2023/04/28/test-my-site/font.png" alt="font"></p>
+<p>安装插件：</p>
+<h4 id="插件-语法高亮-自动补齐"><a href="#插件-语法高亮-自动补齐" class="headerlink" title="插件 语法高亮 + 自动补齐"></a>插件 语法高亮 + 自动补齐</h4><p><img src="/2023/04/28/test-my-site/plugin.png" alt="plugin"></p>
+<ul>
+<li>前往 ~&#x2F;.oh-my-zsh&#x2F;custom&#x2F;plugins 目录下：</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/zsh-users/zsh-syntax-highlighting.git</span><br><span class="line">git clone --depth=1 https://github.com/zsh-users/zsh-autosuggestions.git $&#123;ZSH_CUSTOM:-$&#123;ZSH:-~/.oh-my-zsh&#125;/custom&#125;/plugins/zsh-autosuggestions</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>将插件添加到配置文件~&#x2F;.zshrc的插件部分：</li>
+</ul>
+<p><img src="/2023/04/28/test-my-site/plugin_zshrc.png" alt="plugin-zshrc"></p>
+<ul>
+<li>Exit 重启iTerm2即可，更新更改配置。</li>
+</ul>
+<hr>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+
+
+    <!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <p class="copyright text-muted">
+          Theme By <a target="_blank" href="https://github.com/levblanc">Levblanc.</a>
+          Inspired By <a target="_blank" href="https://github.com/klugjo/hexo-theme-clean-blog">Clean Blog.</a>
+        <p class="copyright text-muted">
+          Powered By <a target="_blank" href="https://hexo.io/">Hexo.</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- After Footer Scripts -->
+
+<script src="/js/highlight.pack.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) {
+    var codeBlocks = Array.prototype.slice.call(document.getElementsByTagName('pre'))
+    codeBlocks.forEach(function(block, index) {
+      hljs.highlightBlock(block);
+    });
+  });
+</script>
+
+  </body>
+</html>
+
